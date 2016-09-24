@@ -6569,14 +6569,20 @@ h1,
 #overview .title,
 #work .title,
 #feature .title,
-#screenshot .title {
+#screenshot .title,
+#people .title,
+#team .title,
+#pricing .title {
   text-align: center;
   margin-bottom: 100px;
 }
 #overview .title h1,
 #work .title h1,
 #feature .title h1,
-#screenshot .title h1 {
+#screenshot .title h1,
+#people .title h1,
+#team .title h1,
+#pricing .title h1 {
   font-size: 36px;
   text-transform: uppercase;
   font-family: "Montserrat Bold";
@@ -6584,17 +6590,30 @@ h1,
 #overview .title p,
 #work .title p,
 #feature .title p,
-#screenshot .title p {
+#screenshot .title p,
+#people .title p,
+#team .title p,
+#pricing .title p {
   font-size: 16px;
   font-family: "Roboto Regular";
-  text-align: center;
   padding-left: 270px;
   padding-right: 270px;
+  text-align: center;
 }
 #overview .work,
 #work .work,
 #feature .work,
-#screenshot .work {
+#screenshot .work,
+#people .work,
+#team .work,
+#pricing .work,
+#overview .team,
+#work .team,
+#feature .team,
+#screenshot .team,
+#people .team,
+#team .team,
+#pricing .team {
   color: #fff;
 }
 #overview .content .ov-item {
@@ -6784,6 +6803,172 @@ h1,
   -moz-transition: all 1s;
   transition: all 1s;
 }
+#video {
+  background: url('../assets/images/video-bg.png') center center / cover;
+}
+#video img {
+  margin-left: 45%;
+}
+#video h1 {
+  font-size: 48px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  color: #fff;
+}
+#video p {
+  font-size: 16px;
+  font-family: "Roboto Regular";
+  color: #fff;
+  text-align: center;
+}
+#people .pp-it .it-ct {
+  padding: 30px 0 30px 0;
+  margin: 0px 50px 0px 200px;
+}
+#people .pp-it .it-ct p {
+  margin-bottom: 0;
+  font-family: "Roboto Italic";
+  font-size: 16px;
+}
+#people .pp-it .it-ct h2 {
+  font-size: 14px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+}
+#people .pp-it .it-ct i.fa.fa-quote-left {
+  font-size: 30px;
+  color: #8359e9;
+}
+#people .pp-it .it-ct i.fa.fa-star {
+  font-size: 15px;
+  color: #8e54e9;
+}
+#people .pp-it.it1 {
+  background: url('../assets/images/quote-bg1.png') center center / cover;
+}
+#people .pp-it.it2 {
+  background: url('../assets/images/quote-bg2.png') center center / cover;
+}
+#team {
+  background: url('../assets/images/team-bg.png') center center / cover;
+}
+#team .team-it .mem-infor {
+  margin-top: 0;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #fff;
+  width: 270px;
+  color: #606060;
+}
+#team .team-it .mem-infor h1 {
+  font-size: 18px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+}
+#team .team-it .mem-infor span {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+}
+#team .team-it .mem-infor .socail {
+  border-top: 1px solid #eeeeee;
+  padding: 10px 0 20px 0;
+}
+#team .team-it .mem-infor .socail i {
+  font-size: 16px;
+  color: #b2b2b2;
+  padding: 15px;
+  border-radius: 50%;
+}
+#team .team-it .mem-infor .socail i:hover {
+  background: #4b74e6;
+  background: -webkit-linear-gradient(left, #4b74e6, #8956e9);
+  background: -moz-linear-gradient(left, #4b74e6, #8956e9);
+  background: linear-gradient(to right, #4b74e6, #8956e9);
+  color: #fff;
+}
+#pricing .price-it {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  padding-top: 30px;
+}
+#pricing .price-it .pr-it-ct {
+  text-align: center;
+}
+#pricing .price-it .pr-it-ct h1 {
+  font-size: 24px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  color: #8e54e9;
+}
+#pricing .price-it .pr-it-ct img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#pricing .price-it .pr-it-ct ul.list {
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "Roboto Regular";
+  color: #a2a2a2;
+}
+#pricing .price-it .pr-it-ct .cost {
+  padding-bottom: 50px;
+  padding-top: 30px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 18px;
+  font-family: "Roboto Bold";
+  color: #8e54e9;
+}
+#pricing .price-it .pr-it-ct .cost span {
+  font-size: 72px;
+}
+#pricing .price-it .pr-it-ct button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: "Roboto Regular";
+  text-align: center;
+  color: #5c6ce7;
+  background: none;
+  border: 1px solid #5c6ce7;
+  padding: 5px 25px 5px 25px;
+  border-radius: 40px;
+}
+#pricing .price-it.active {
+  width: 100%;
+  background: url('../assets/images/active-bg.png') center center / cover;
+  border: none;
+}
+#pricing .price-it.active .pr-it-ct h1,
+#pricing .price-it.active .pr-it-ct .cost {
+  color: #4776e6;
+}
+#pricing .price-it.active .pr-it-ct ul.list {
+  color: #666666;
+}
+#pricing .price-it.active .pr-it-ct button {
+  background: #4b74e6;
+  background: -webkit-linear-gradient(left, #4b74e6, #8956e9);
+  background: -moz-linear-gradient(left, #4b74e6, #8956e9);
+  background: linear-gradient(to right, #4b74e6, #8956e9);
+  color: #fff;
+}
+#question {
+  background: url('../assets/images/question-bg.png') center center / cover;
+}
+#question .title.question h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Montserrat Bold";
+  color: #fff;
+}
+#question .title.question p {
+  font-size: 16px;
+  font-family: "Roboto Regular";
+  color: #fff;
+}
 header {
   background: url('../assets/images/hd-bg.png') center center / cover;
 }
@@ -6836,6 +7021,10 @@ section {
 @font-face {
   font-family: "Roboto Bold";
   src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: "Roboto Italic";
+  src: url('fonts/Roboto-Italic.ttf');
 }
 @font-face {
   font-family: "Roboto Thin";
