@@ -9,7 +9,7 @@
 	font-family: "Roboto Regular";
 	
 }
-#overview, #work, #feature, #screenshot, #people, #team, #pricing, #latest-post, #touch{
+#overview, #work, #feature, #screenshot, #people, #team, #pricing, #latest-post, #touch, #footer{
 	.title{
 		text-align: center;
 		margin-bottom: 100px;
@@ -564,11 +564,16 @@
 		}
 		.map{
 			width: 50%;
+			height: auto;
+			float: right;
+			margin-top: -587px;
+
 		}
 		.ct-form{
 			background-color: #3059be;
 			padding-left: 40px;
 			padding-right: 40px;
+			padding-bottom: 73px;
 			h1{
 				font-size: 18px;
 				text-transform: uppercase;
@@ -582,7 +587,7 @@
 					font-size: 14px;
 					font-family: "Roboto Regular";
 					width: 100%;
-					margin-bottom: 10px;
+					margin-bottom: 20px;
 					padding-left: 20px;
 					background-color: #456ac5;
 					color: #a8b5e0;
@@ -590,8 +595,67 @@
 				}
 				input.message{
 					height: 208px;
+					padding-top: 0;
+				}
+				button{
+						font-size: 14px;
+						font-family: "Roboto Bold";
+						text-transform: uppercase;
+						color: #3059be;
+						border: none;
+						margin-top: 30px;
+						border-radius: 30px;
+						padding: 5px 25px 5px 25px;
+						i{
+							margin-left: 15px;
+						}
 				}
 			}
 		}
 	}
+}
+#footer{
+		background: url('../assets/images/footer-bg.png') center center/cover;
+		padding-top: 160px;
+		padding-bottom: 150px;
+		.subcribe{
+			input{
+				width: 50%;
+				margin-left: 25%;
+				font-size: 14px;
+				font-family: "Roboto Regular";
+				padding:10px 20px 10px 20px;
+				background-color: #5378d2;
+				color: #99ace1;
+				border: none;
+				border-radius: 30px;
+				position: relative;
+			}
+			button{
+				font-size: 14px;
+				font-family: "Roboto Bold";
+				text-transform: uppercase;
+				color: #3059be;
+				border: none;
+				margin-top: 30px;
+				border-radius: 30px;
+				padding: 10px 25px 10px 25px;
+				position: absolute;
+				top: 53%;
+				right: 25%;
+				i{
+					margin-left: 15px;
+				}
+			}
+			p{
+				margin-left: 33%;
+				margin-top: 80px;
+				font-size: 18px;
+				font-family: "Roboto Regular";
+				color: #fff;
+				span{
+					font-family: "Roboto Bold";
+				}
+			}
+		}
 }
