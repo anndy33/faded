@@ -9,7 +9,7 @@
 	font-family: "Roboto Regular";
 	
 }
-#overview, #work, #feature, #screenshot, #people, #team, #pricing{
+#overview, #work, #feature, #screenshot, #people, #team, #pricing, #latest-post, #touch{
 	.title{
 		text-align: center;
 		margin-bottom: 100px;
@@ -344,10 +344,254 @@
 	.title.question h1{
 		.sec-title();
 		color: #fff;
+		text-align: left;
 	}
 	.title.question p{
 		.p();
 		color: #fff;
 	}
+	.ques-left{
+		margin-top: 100px;
+	}
+	.question-it{
+		margin-top: 100px;
+		.accordion-item{
+		button.accordion {
+			background-color: #7d73ea;
+		    color: #444;
+		    cursor: pointer;
+		    width: 100%;
+		    border: none;
+		    text-align: left;
+		    outline: none;
+		    font-size: 20px;
+		    transition: 0.4s;
+		    position: relative;
+		    padding-left: inherit;
+		    margin-top: 10px;
+		    margin-bottom: 20px;
+		    padding: 10px 0 10px 0;
+		    h3{
+		    	font-size: 16px;
+		    	margin-left: 50px;
+		    	color: #fff;
+		    	font-family: "Roboto Bold";
+		    	position: absolute;
+		    	margin-top: 5px;
+		    }
+		}
+		button.accordion.active, button.accordion:hover {
+   			 h3{
+   			 	
+   			 }
+		}
+		button.accordion:after {
+		    content: '\02795';
+		    font-size: 10px;
+		    color: #fff;
+		    float: right;
+		    margin-right: 20px;
+		    padding-left: 10px;
+		    padding-right:10px;
+		    border: 1px solid;
+		}
+		button.accordion:hover:after{
+			background-color: #fff;
+			color: #4776e6;
+		}
+		button.accordion.active:after {
+			background-color: #fff;
+   		 	content: "\2796";
+   		 	color: #4776e6;
 
+		}
+		button.accordion.active:hover:after{
+			background-color: #fff;
+			color: #4776e6;
+		}
+		div.panel {
+		   background-color: #7d73ea;
+		    max-height: 0;
+		    overflow: hidden; 
+		    transition: 0.6s ease-in-out;
+		    opacity: 0;
+		    margin-bottom: 0px;
+		    img{
+		    	margin-left: 50px;
+
+		    }
+		    p{
+				font-size: 14px;
+				font-family: "Roboto Regular";
+				color: #fff;
+				margin-top: -80px;
+				padding-left: 70px;
+				padding-right: 100px;
+		    }
+		}
+		div.panel.show {
+			display: flex;
+		    opacity: 1;
+		    max-height: 500px;  
+		    margin-top: -20px;
+		}
+		}
+	}
+	.ques-img{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+#latest-post{
+	.post-it{
+		background-color: #f9f9f9;
+		img{
+			width: 100%;
+		}
+		.post-it-ct{
+			padding: 0 35px 20px 35px;
+			h1{
+				font-size: 18px;
+				font-family: "Roboto Bold";
+				text-transform: uppercase;
+				color: #606060;
+				text-align: left;
+			}
+			span{
+				font-size: 14px;
+				font-family: "Roboto Bold";
+				color: #bebebe; 
+			}
+			p{
+				.p();
+				color: #666666;
+			}
+			a{
+				font-size: 14px;
+				color: #7898eb;
+				text-transform: uppercase;
+				font-family: "Roboto Bold";
+				i{
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	.post-it:hover{
+		box-shadow: 0px 0px 10px 1px #888888;
+	}
+}
+#getapp{
+	background: url('../assets/images/app-bg.png') center center/cover;
+	.title h1{
+		.sec-title();
+		text-align: left;
+	}
+	.title p{
+		.p();
+	}
+	.app-it{
+		margin-top: 100px;
+		h1{
+			font-size: 24px;
+			font-family: "Roboto Bold";
+			text-transform: uppercase;
+			text-align: left;
+		}
+	}
+}
+#touch{
+	background: url('../assets/images/touch-bg.png') center center/cover;
+	.touch-ct{
+		.contact{
+			width: 50%;
+			background-color: #fff;
+			padding-left: 40px;
+			padding-bottom: 50px;
+			padding-right: 70px;
+			h1{
+				font-size: 18px;
+				text-transform: uppercase;
+				font-family: "Montserrat Bold";
+				text-align: left;
+				padding-top: 40px;
+			}
+			p{
+				.p();
+			}
+			.ct-infor{
+				span{
+					font-size: 14px;
+					font-family: "Roboto Bold";
+					text-transform: uppercase;
+					color: #4776e6;
+					i{
+						font-size: 20px;
+						margin-right: 20px;
+					}
+					p{
+						.p();
+					}
+				}
+			}
+			.ct-social{
+				i{
+					font-size: 15px;
+					color: #fff;
+					padding: 10px;
+					border-radius: 50%;
+					margin-right: 5px;
+				}
+				i.fa-facebook{
+					background-color: #3b5998;
+					padding-left: 13px;
+					padding-right: 13px;
+				}
+				i.fa-twitter{
+					background-color: #4cc2ff;
+				}
+				i.fa-pinterest-p{
+					background-color: #cb181e;
+					padding-left: 13px;
+					padding-right: 13px;
+				}
+				i.fa-wifi{
+					background-color: #ff7d03;
+				}
+			}
+		}
+		.map{
+			width: 50%;
+		}
+		.ct-form{
+			background-color: #3059be;
+			padding-left: 40px;
+			padding-right: 40px;
+			h1{
+				font-size: 18px;
+				text-transform: uppercase;
+				font-family: "Montserrat Bold";
+				text-align: left;
+				padding-top: 40px;
+				color: #fff;
+			}
+			form{
+				input{
+					font-size: 14px;
+					font-family: "Roboto Regular";
+					width: 100%;
+					margin-bottom: 10px;
+					padding-left: 20px;
+					background-color: #456ac5;
+					color: #a8b5e0;
+					border: none;
+				}
+				input.message{
+					height: 208px;
+				}
+			}
+		}
+	}
 }

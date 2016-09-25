@@ -6572,7 +6572,9 @@ h1,
 #screenshot .title,
 #people .title,
 #team .title,
-#pricing .title {
+#pricing .title,
+#latest-post .title,
+#touch .title {
   text-align: center;
   margin-bottom: 100px;
 }
@@ -6582,7 +6584,9 @@ h1,
 #screenshot .title h1,
 #people .title h1,
 #team .title h1,
-#pricing .title h1 {
+#pricing .title h1,
+#latest-post .title h1,
+#touch .title h1 {
   font-size: 36px;
   text-transform: uppercase;
   font-family: "Montserrat Bold";
@@ -6593,7 +6597,9 @@ h1,
 #screenshot .title p,
 #people .title p,
 #team .title p,
-#pricing .title p {
+#pricing .title p,
+#latest-post .title p,
+#touch .title p {
   font-size: 16px;
   font-family: "Roboto Regular";
   padding-left: 270px;
@@ -6607,13 +6613,17 @@ h1,
 #people .work,
 #team .work,
 #pricing .work,
+#latest-post .work,
+#touch .work,
 #overview .team,
 #work .team,
 #feature .team,
 #screenshot .team,
 #people .team,
 #team .team,
-#pricing .team {
+#pricing .team,
+#latest-post .team,
+#touch .team {
   color: #fff;
 }
 #overview .content .ov-item {
@@ -6963,11 +6973,249 @@ h1,
   text-transform: uppercase;
   font-family: "Montserrat Bold";
   color: #fff;
+  text-align: left;
 }
 #question .title.question p {
   font-size: 16px;
   font-family: "Roboto Regular";
   color: #fff;
+}
+#question .ques-left {
+  margin-top: 100px;
+}
+#question .question-it {
+  margin-top: 100px;
+}
+#question .question-it .accordion-item button.accordion {
+  background-color: #7d73ea;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+  padding-left: inherit;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0 10px 0;
+}
+#question .question-it .accordion-item button.accordion h3 {
+  font-size: 16px;
+  margin-left: 50px;
+  color: #fff;
+  font-family: "Roboto Bold";
+  position: absolute;
+  margin-top: 5px;
+}
+#question .question-it .accordion-item button.accordion:after {
+  content: '\02795';
+  font-size: 10px;
+  color: #fff;
+  float: right;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid;
+}
+#question .question-it .accordion-item button.accordion:hover:after {
+  background-color: #fff;
+  color: #4776e6;
+}
+#question .question-it .accordion-item button.accordion.active:after {
+  background-color: #fff;
+  content: "\2796";
+  color: #4776e6;
+}
+#question .question-it .accordion-item button.accordion.active:hover:after {
+  background-color: #fff;
+  color: #4776e6;
+}
+#question .question-it .accordion-item div.panel {
+  background-color: #7d73ea;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+  margin-bottom: 0px;
+}
+#question .question-it .accordion-item div.panel img {
+  margin-left: 50px;
+}
+#question .question-it .accordion-item div.panel p {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+  color: #fff;
+  margin-top: -80px;
+  padding-left: 70px;
+  padding-right: 100px;
+}
+#question .question-it .accordion-item div.panel.show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  max-height: 500px;
+  margin-top: -20px;
+}
+#question .ques-img img {
+  width: 100%;
+  height: auto;
+}
+#latest-post .post-it {
+  background-color: #f9f9f9;
+}
+#latest-post .post-it img {
+  width: 100%;
+}
+#latest-post .post-it .post-it-ct {
+  padding: 0 35px 20px 35px;
+}
+#latest-post .post-it .post-it-ct h1 {
+  font-size: 18px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  color: #606060;
+  text-align: left;
+}
+#latest-post .post-it .post-it-ct span {
+  font-size: 14px;
+  font-family: "Roboto Bold";
+  color: #bebebe;
+}
+#latest-post .post-it .post-it-ct p {
+  font-size: 16px;
+  font-family: "Roboto Regular";
+  color: #666666;
+}
+#latest-post .post-it .post-it-ct a {
+  font-size: 14px;
+  color: #7898eb;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+}
+#latest-post .post-it .post-it-ct a i {
+  margin-left: 10px;
+}
+#latest-post .post-it:hover {
+  box-shadow: 0px 0px 10px 1px #888888;
+}
+#getapp {
+  background: url('../assets/images/app-bg.png') center center / cover;
+}
+#getapp .title h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Montserrat Bold";
+  text-align: left;
+}
+#getapp .title p {
+  font-size: 16px;
+  font-family: "Roboto Regular";
+}
+#getapp .app-it {
+  margin-top: 100px;
+}
+#getapp .app-it h1 {
+  font-size: 24px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  text-align: left;
+}
+#touch {
+  background: url('../assets/images/touch-bg.png') center center / cover;
+}
+#touch .touch-ct .contact {
+  width: 50%;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-bottom: 50px;
+  padding-right: 70px;
+}
+#touch .touch-ct .contact h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Montserrat Bold";
+  text-align: left;
+  padding-top: 40px;
+}
+#touch .touch-ct .contact p {
+  font-size: 16px;
+  font-family: "Roboto Regular";
+}
+#touch .touch-ct .contact .ct-infor span {
+  font-size: 14px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  color: #4776e6;
+}
+#touch .touch-ct .contact .ct-infor span i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+#touch .touch-ct .contact .ct-infor span p {
+  font-size: 16px;
+  font-family: "Roboto Regular";
+}
+#touch .touch-ct .contact .ct-social i {
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#touch .touch-ct .contact .ct-social i.fa-facebook {
+  background-color: #3b5998;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+#touch .touch-ct .contact .ct-social i.fa-twitter {
+  background-color: #4cc2ff;
+}
+#touch .touch-ct .contact .ct-social i.fa-pinterest-p {
+  background-color: #cb181e;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+#touch .touch-ct .contact .ct-social i.fa-wifi {
+  background-color: #ff7d03;
+}
+#touch .touch-ct .map {
+  width: 50%;
+}
+#touch .touch-ct .ct-form {
+  background-color: #3059be;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#touch .touch-ct .ct-form h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Montserrat Bold";
+  text-align: left;
+  padding-top: 40px;
+  color: #fff;
+}
+#touch .touch-ct .ct-form form input {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  background-color: #456ac5;
+  color: #a8b5e0;
+  border: none;
+}
+#touch .touch-ct .ct-form form input.message {
+  height: 208px;
 }
 header {
   background: url('../assets/images/hd-bg.png') center center / cover;
