@@ -6645,6 +6645,12 @@ h1,
   font-family: "Roboto Regular";
   text-align: center;
 }
+#overview .content .hvr-bubble-bottom:before {
+  display: none !important;
+}
+#overview .content .hvr-bubble-bottom:hover:before {
+  display: block !important;
+}
 #overview .content .ov-item:hover {
   box-shadow: 0px 0px 10px 1px #888888;
 }
