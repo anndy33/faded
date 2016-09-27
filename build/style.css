@@ -6659,12 +6659,26 @@ h1,
 }
 #work .wk-image {
   padding-left: 70px;
+  margin-bottom: 100px;
 }
 #work .wk-image img {
   margin-right: 60px;
+  height: auto;
 }
 #work .wk-content .wk-it {
   color: #fff;
+  margin-top: 100px;
+}
+#work .wk-content .wk-it h1 {
+  font-size: 14px;
+  font-family: "Roboto Bold";
+  border: 1px solid;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 15%;
+  margin-left: 43%;
+  border-radius: 50%;
+  background-color: #5470e7;
 }
 #work .wk-content .wk-it h2 {
   font-family: inherit;
@@ -6692,6 +6706,9 @@ h1,
   font-size: 16px;
   font-family: "Roboto Regular";
   text-align: center;
+}
+#feature {
+  background: url('../assets/images/feature-bg.png') center center / cover;
 }
 #feature .ft-content .middle {
   padding-top: 250px;
@@ -6765,6 +6782,10 @@ h1,
   border: 1px solid #7d5ce8;
   color: #7d5ce8;
 }
+#screenshot ul.src-menu li.active a {
+  border: 1px solid #7d5ce8;
+  color: #7d5ce8;
+}
 #screenshot .grid {
   margin-top: 80px;
   display: -webkit-box;
@@ -6825,7 +6846,10 @@ h1,
   transition: all 1s;
 }
 #video {
-  background: url('../assets/images/video-bg.png') center center / cover;
+  background: url('../assets/images/video-bg.png');
+  background-size: cover;
+  padding-bottom: 267px;
+  padding-top: 267px;
 }
 #video img {
   margin-left: 45%;
@@ -6873,12 +6897,15 @@ h1,
 #team {
   background: url('../assets/images/team-bg.png') center center / cover;
 }
+#team .team-it img {
+  width: 100%;
+  height: auto;
+}
 #team .team-it .mem-infor {
   margin-top: 0;
   padding-top: 10px;
   text-align: center;
   background-color: #fff;
-  width: 270px;
   color: #606060;
 }
 #team .team-it .mem-infor h1 {
@@ -7022,6 +7049,7 @@ h1,
   font-family: "Roboto Bold";
   position: absolute;
   margin-top: 5px;
+  padding-top: 4px;
 }
 #question .question-it .accordion-item button.accordion:after {
   content: '\02795';
@@ -7142,7 +7170,8 @@ h1,
   text-align: left;
 }
 #touch {
-  background: url('../assets/images/touch-bg.png') center center / cover;
+  background: url('../assets/images/touch-bg.png');
+  background-size: cover;
 }
 #touch .touch-ct .contact {
   width: 50%;
@@ -7247,7 +7276,8 @@ h1,
   margin-left: 15px;
 }
 #footer {
-  background: url('../assets/images/footer-bg.png') center center / cover;
+  background: url('../assets/images/footer-bg.png');
+  background-size: cover;
   padding-top: 160px;
   padding-bottom: 150px;
 }
@@ -7288,6 +7318,20 @@ h1,
 }
 #footer .subcribe p span {
   font-family: "Roboto Bold";
+}
+@media screen and (max-width: 1200px) {
+  #work .wk-image {
+    padding-left: 0;
+  }
+  #work .wk-image img {
+    margin-right: 0;
+  }
+  #footer .subcribe button {
+    top: 56%;
+  }
+  #screenshot .grid {
+    margin-left: 20px;
+  }
 }
 header {
   background: url('../assets/images/hd-bg.png') center center / cover;
@@ -7369,6 +7413,9 @@ section {
 @font-face {
   font-family: "Montserrat Bold";
   src: url('fonts/Montserrat-Bold.otf');
+}
+.navbar {
+  padding: 0 !important;
 }
 .navbar-default {
   background: none;

@@ -22,7 +22,6 @@
 		padding-left: 270px;
 		padding-right: 270px;
 		text-align: center;
-	
 	}
 	.work,.team{
 		color: #fff;
@@ -46,16 +45,12 @@
 		}
 		.hvr-bubble-bottom:before{
 				display: none !important;
-
-
 		}
 		.hvr-bubble-bottom:hover:before{
 				display: block !important;
-
 		}
 		.ov-item:hover{
 		  box-shadow: 0px 0px 10px 1px #888888;
-
 		}
 	}
 }
@@ -63,13 +58,27 @@
 	background: url('../assets/images/work-bg.png') center center/cover;
 	.wk-image{
 		padding-left: 70px;
+		margin-bottom: 100px;
 		img{
 			margin-right: 60px;
+			height: auto;
 		}
 	}
 	.wk-content{
 		.wk-it{
 			color: #fff;
+			margin-top: 100px;
+			h1{
+				font-size: 14px;
+				font-family: "Roboto Bold";
+				border: 1px solid;
+				padding-top: 16px;
+				padding-bottom: 16px;
+				width: 15%;
+				margin-left: 43%;
+				border-radius: 50%; 
+				background-color: #5470e7;	
+			}
 			img{
 
 			}
@@ -85,6 +94,7 @@
 	}
 }
 #feature{
+	background: url('../assets/images/feature-bg.png') center center/cover;
 	.ft-content{
 		.middle{
 			padding-top: 250px;
@@ -143,6 +153,11 @@
 		border: 1px solid #7d5ce8;
 		color: #7d5ce8;
 	}
+	ul.src-menu li.active a{
+		border: 1px solid #7d5ce8;
+		color: #7d5ce8;
+
+	}
 	.grid{
 		margin-top: 80px;
 		display: flex;
@@ -190,7 +205,10 @@
 	}
 }
 #video{
-	background: url('../assets/images/video-bg.png') center center/cover;
+	background: url('../assets/images/video-bg.png');
+	background-size: cover;
+	padding-bottom: 267px;
+	padding-top: 267px;
 	img{
 		margin-left: 45%;
 	}
@@ -244,12 +262,16 @@
 #team{
 	background: url('../assets/images/team-bg.png') center center/cover;
 	.team-it{
+		img{
+			width: 100%;
+			height: auto;
+		}
 		.mem-infor{
 			margin-top: 0;
 			padding-top: 10px;
 			text-align: center;
 			background-color: #fff;
-			width: 270px;
+			
 			color: #606060;
 			h1{
 				font-size: 18px;
@@ -388,6 +410,7 @@
 		    	font-family: "Roboto Bold";
 		    	position: absolute;
 		    	margin-top: 5px;
+		    	padding-top: 4px;
 		    }
 		}
 		button.accordion.active, button.accordion:hover {
@@ -513,7 +536,8 @@
 	}
 }
 #touch{
-	background: url('../assets/images/touch-bg.png') center center/cover;
+	background: url('../assets/images/touch-bg.png');
+	background-size: cover;
 	.touch-ct{
 		.contact{
 			width: 50%;
@@ -625,47 +649,64 @@
 	}
 }
 #footer{
-		background: url('../assets/images/footer-bg.png') center center/cover;
-		padding-top: 160px;
-		padding-bottom: 150px;
-		.subcribe{
-			input{
-				width: 50%;
-				margin-left: 25%;
-				font-size: 14px;
-				font-family: "Roboto Regular";
-				padding:10px 20px 10px 20px;
-				background-color: #5378d2;
-				color: #99ace1;
-				border: none;
-				border-radius: 30px;
-				position: relative;
-			}
-			button{
-				font-size: 14px;
-				font-family: "Roboto Bold";
-				text-transform: uppercase;
-				color: #3059be;
-				border: none;
-				margin-top: 30px;
-				border-radius: 30px;
-				padding: 10px 25px 10px 25px;
-				position: absolute;
-				top: 53%;
-				right: 25%;
-				i{
-					margin-left: 15px;
-				}
-			}
-			p{
-				margin-left: 33%;
-				margin-top: 80px;
-				font-size: 18px;
-				font-family: "Roboto Regular";
-				color: #fff;
-				span{
-					font-family: "Roboto Bold";
-				}
+	background: url('../assets/images/footer-bg.png');
+	background-size: cover;
+	padding-top: 160px;
+	padding-bottom: 150px;
+	.subcribe{
+		input{
+			width: 50%;
+			margin-left: 25%;
+			font-size: 14px;
+			font-family: "Roboto Regular";
+			padding:10px 20px 10px 20px;
+			background-color: #5378d2;
+			color: #99ace1;
+			border: none;
+			border-radius: 30px;
+			position: relative;
+		}
+		button{
+			font-size: 14px;
+			font-family: "Roboto Bold";
+			text-transform: uppercase;
+			color: #3059be;
+			border: none;
+			margin-top: 30px;
+			border-radius: 30px;
+			padding: 10px 25px 10px 25px;
+			position: absolute;
+			top: 53%;
+			right: 25%;
+			i{
+				margin-left: 15px;
 			}
 		}
+		p{
+			margin-left: 33%;
+			margin-top: 80px;
+			font-size: 18px;
+			font-family: "Roboto Regular";
+			color: #fff;
+			span{
+				font-family: "Roboto Bold";
+			}
+		}
+	}
+}
+// responsive for ipad
+@media screen and (max-width: 1200px){
+	#work .wk-image{
+		padding-left: 0;
+	}
+	#work .wk-image img{
+		margin-right: 0;
+	}
+	#footer .subcribe button{
+		top: 56%;
+	}
+	#screenshot .grid{
+		margin-left: 20px;
+	}
+	
 }
