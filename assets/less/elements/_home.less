@@ -694,8 +694,18 @@
 		}
 	}
 }
-// responsive for ipad
-@media screen and (max-width: 1200px){
+//responsive for ipad
+@media screen and (max-width: 1200px) and(min-width: 769px){
+	body{
+		// background-color: red;
+	}
+	header .logo{
+		margin-left: 40%;
+	}
+	#slide .image img{
+		width: 80%;
+		height: auto;
+	}
 	#work .wk-image{
 		padding-left: 0;
 	}
@@ -708,5 +718,29 @@
 	#screenshot .grid{
 		margin-left: 20px;
 	}
-	
+	#screenshot ul.src-menu{
+		margin-left: 0;
+	}
+	#screenshot ul.src-menu li{
+		margin-right: 20px;
+	}
+	.team-it.hvr-grow{
+		margin-bottom: 30px;
+	}
+	#question .ques-img img{
+		width: 50%;
+		height: auto;
+		margin-left: 100px;
+		margin-top: 50px;
+	}
+	#footer .subcribe button{
+		top: 65%;
+	}
+}
+// responsive for iphone
+@media screen and(max-width: 768px) and (min-width: 320px){
+	body{
+		background-color: pink;
+	}
+
 }
