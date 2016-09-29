@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Blog List</title>
-	<link rel="stylesheet" href="build/style.css">
+	 <link rel="stylesheet" href="build/style.css">
      <link rel="stylesheet" href="build/hover.css">
     <link rel="stylesheet" href="build/scrolling-nav.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
 </head>
 <body>
 	<header id="hd-page">
@@ -14,16 +15,21 @@
 			<div class="row">
 				<nav id="mainNav" class="navbar navbar-default navbar-custom" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header page-scroll">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-						</button>
-						<!-- <a class="navbar-brand page-scroll" href="#page-top">Spirit8</a> -->
-					</div>
 					<div class="col-md-2 col-sm-2">
 							<div class="logo">
 								<img  class="button hvr-grow" src="assets/images/logo.png" alt="">
 							</div>
+					</div>
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+							<div id="nav-icon1">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</button>
+						<!-- <a class="navbar-brand page-scroll" href="#page-top">Spirit8</a> -->
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="col-md-10 col-sm-10">
@@ -259,6 +265,13 @@
 	</footer>
 	<!-- end of footer -->
 	<script src="assets/js/libs/jquery.js"></script>
-<script src="assets/js/libs/bootstrap.min.js"></script>
+	<script src="assets/js/libs/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+		});
+	});
+	</script>
 </body>
 </html>

@@ -25,7 +25,12 @@
 				</div>
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+					<span class="sr-only">Toggle navigation</span>
+						<div id="nav-icon1">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</button>
 					<!-- <a class="navbar-brand page-scroll" href="#page-top">Spirit8</a> -->
 				</div>
@@ -847,6 +852,11 @@
 			this.nextElementSibling.classList.toggle("show");
 			}
 		}
+	});
+	$(document).ready(function(){
+		$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+		});
 	});
 </script>
 
