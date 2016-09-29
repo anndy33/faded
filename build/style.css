@@ -7112,6 +7112,7 @@ h1,
 #latest-post .post-it,
 #page-content .post-it {
   background-color: #f9f9f9;
+  margin-bottom: 50px;
 }
 #latest-post .post-it img,
 #page-content .post-it img {
@@ -7601,6 +7602,25 @@ h1,
   #work .wk-image img {
     margin-left: 0 !important;
   }
+}
+#page-content .page-button {
+  text-align: right;
+}
+#page-content .page-button a {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+  padding: 10px 15px 10px 15px;
+  border: 1px solid;
+  color: #afafaf;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+#page-content .page-button a.active {
+  background: #4b74e6;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #4b74e6, #8956e9);
+  background: -moz-linear-gradient(left, #4b74e6, #8956e9);
+  background: linear-gradient(to right, #4b74e6, #8956e9);
 }
 header#hd-page {
   background: url('../assets/images/blog-bg.png') center center / cover;
