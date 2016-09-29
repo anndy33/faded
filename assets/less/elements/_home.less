@@ -477,7 +477,7 @@
 		}
 	}
 }
-#latest-post{
+#latest-post, #page-content{
 	.post-it{
 		background-color: #f9f9f9;
 		img{
@@ -694,8 +694,11 @@
 		}
 	}
 }
-//responsive for ipad
+
 @media screen and (max-width: 1200px) and(min-width: 769px){
+	.navbar-header{
+		float: none;
+	}
 	.navbar-toggle{
 		display: block;
 		color: white !important;
@@ -726,9 +729,8 @@
 		float: left !important;
 		margin-left: 0;
 	}
-	
 	header .logo{
-		// margin-left: 40%;
+		margin-top: 0 !important;
 	}
 	#slide .image img{
 		width: 80%;
@@ -777,21 +779,29 @@
 }
 // responsive for iphone
 @media screen and(max-width: 768px) and (min-width: 568px){
-	header .logo{
-		margin-top: -100px !important;
-	}
 	ul.menu{
 		display: flex;
 		flex-direction: column;
 		float: left !important;
 		margin-left: 0;
 	}
-	button.navbar-toggle{
-		margin-top: 80px;
-		color: white !important;
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: none !important;
+	}
+	.navbar-collapse.in {
+		overflow-y: auto;
+	}
+	//display ul menu when click menu button
+	.collapse.in {
+		display: block !important;
+		visibility: visible;
 	}
 	.navbar-collapse{
 		border-top: none !important;
+	}
+	.navbar-toggle{
+		color: #fff;
+		margin-top: -50px;
 	}
 	header #slide{
 		margin-top: 0 !important;
@@ -852,11 +862,12 @@
 	}
 }
 @media(max-width: 567px){
-	body{
-		background-color: pink;
+	.navbar-toggle{
+		color: #fff;
+		margin-top: -50px;
 	}
 	ul.menu{
-		display: flex;
+		display: none;
 		flex-direction: column;
 		float: left !important;
 		margin-left: 0;
@@ -866,17 +877,13 @@
 	}
 	header #slide{
 		margin-top: 0 !important;
+		padding-bottom: 100px;
 	}
 	.image{
 		display: none;
 	}
 	.btn{
-
-		display: flex;
-		flex-direction: column;
-		button{
-			margin-bottom:30px;
-		}
+		display: none;
 	}
 	.title p{
 		padding: 0 !important;
@@ -894,5 +901,36 @@
 		margin-left: 0 !important;
 		display: flex;
 		flex-direction: column;
+	}
+	#people .pp-it .it-ct{
+		margin: 0 !important;
+	}
+	#question .question-it .accordion-item button.accordion h3{
+		margin-left: 0 !important;
+	}
+}
+@media(max-width: 370px){
+	#footer .subcribe input, #footer .subcribe button{
+		display:none;
+	}
+	#touch .touch-ct .map{
+		display: none;
+	}
+	#touch .touch-ct .contact{
+		width: 100%;
+		padding-left: 20px !important;
+	}
+	#latest-post .post-it{
+		margin-bottom: 30px !important;
+	}
+	.title h1{
+		font-size: 20px !important;
+	}
+	#screenshot .grid .grid-item img{
+		width: 100%;
+		height: auto;
+	}
+	#work .wk-image img{
+		margin-left: 0 !important;
 	}
 }

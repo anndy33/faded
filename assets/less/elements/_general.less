@@ -1,4 +1,30 @@
-
+header#hd-page{
+	background: url('../assets/images/blog-bg.png') center center/cover;
+	.page-title{
+		padding-top: 80px;
+		padding-bottom: 135px;
+	}
+	.page-title h1{
+		text-align: left;
+		font-size: 48px;
+		text-transform: uppercase;
+		font-family: "Montserrat Regular";
+		color: #fff;
+	}
+	ul.breadcumb{
+		display: flex;
+		padding-left: 0;
+		li.home{
+			list-style-type: none;
+		}
+		li{
+			margin-right: 30px;
+			font-size: 18px;
+			font-family: "Montserrat Light";
+			color: #fff;
+		}
+	}
+}
 header{
 	background: url('../assets/images/hd-bg.png') center center/cover;
 	.logo{
@@ -37,6 +63,7 @@ header{
 			border-radius: 30px;
 			border: 3px solid #fff;
 			margin-right: 20px;
+			color: #fff;
 		}
 		.btn button:hover{
 			background-color: #fff;
@@ -75,6 +102,10 @@ section{
 @font-face{
 	 font-family: "Montserrat SemiBold";
 	  src: url('./fonts/Montserrat-SemiBold.otf');
+}
+@font-face{
+	 font-family: "Montserrat Regular";
+	  src: url('./fonts/Montserrat-Regular.otf');
 }
 @font-face{
 	 font-family: "Montserrat Bold";
