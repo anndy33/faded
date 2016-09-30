@@ -7397,6 +7397,10 @@ h1,
   #footer .subcribe button {
     top: 65%;
   }
+  #page-details .page-detail-ct {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 568px) {
   ul.menu {
@@ -7489,6 +7493,10 @@ h1,
   #pricing .price-it {
     margin-bottom: 50px;
   }
+  #page-details .page-detail-ct {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
 }
 @media (max-width: 567px) {
   .navbar-toggle {
@@ -7553,6 +7561,10 @@ h1,
   #question .question-it .accordion-item button.accordion h3 {
     margin-left: 0 !important;
   }
+  #page-details .page-detail-ct {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
 }
 @media (max-width: 370px) {
   #footer .subcribe input,
@@ -7578,6 +7590,39 @@ h1,
   }
   #work .wk-image img {
     margin-left: 0 !important;
+  }
+  #page-details .page-detail-ct {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  #page-details .blog-post .quote h2 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  #page-details .comment .cm-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #page-details .comment .cm-item img {
+    width: 100px;
+    height: 100px;
+  }
+  #page-details .comment form.cm-form input.name,
+  #page-details input.email {
+    width: 90% !important;
+    margin-bottom: 30px;
   }
 }
 .navbar-default .navbar-toggle:hover,
@@ -7662,12 +7707,14 @@ h1,
   background: -moz-linear-gradient(left, #4b74e6, #8956e9);
   background: linear-gradient(to right, #4b74e6, #8956e9);
 }
+#page-details .page-detail-ct {
+  margin-left: 200px;
+  margin-right: 200px;
+}
 #page-details .blog-post img {
   margin-bottom: 50px;
-  margin-left: 200px;
-}
-#page-details .blog-post .post-title {
-  margin-left: 200px;
+  width: 100%;
+  height: auto;
 }
 #page-details .blog-post .post-title h1 {
   font-size: 24px;
@@ -7688,15 +7735,9 @@ h1,
   margin-right: 20px;
 }
 #page-details .blog-post p {
-  margin-left: 200px;
-  margin-right: 200px;
   font-size: 16px;
   font-family: "Roboto Regular";
   color: #666666;
-}
-#page-details .blog-post .quote {
-  margin-left: 200px;
-  margin-right: 200px;
 }
 #page-details .blog-post .quote h2 {
   font-family: "Roboto Italic";
@@ -7716,10 +7757,8 @@ h1,
 }
 #page-details .blog-post .ct-social {
   margin-top: 80px;
-  margin-left: 200px;
-  margin-right: 200px;
-  border-top: 1px solid #8c8c8c;
-  border-bottom: 1px solid #8c8c8c;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   padding: 20px 0 20px 0;
 }
 #page-details .blog-post .ct-social span {
@@ -7741,15 +7780,145 @@ h1,
   font-size: 20px;
 }
 #page-details .comment {
-  margin-left: 200px;
   margin-top: 45px;
   margin-bottom: 45px;
 }
 #page-details .comment h1 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300;
   font-size: 16px;
   font-family: "Roboto Bold";
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 50px;
+}
+#page-details .comment h1 small,
+#page-details .comment h1 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+#page-details .comment h1 small,
+#page-details .comment h1 .small {
+  font-size: 65%;
+}
+#page-details .comment .cm-item {
+  border: 1px solid #ebebeb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+#page-details .comment .cm-item img {
+  height: 105px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#page-details .comment .cm-item .cm-ct {
+  margin-left: 20px;
+}
+#page-details .comment .cm-item .cm-ct .cm-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#page-details .comment .cm-item .cm-ct .cm-title h1 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  color: #606060;
+}
+#page-details .comment .cm-item .cm-ct .cm-title h1 small,
+#page-details .comment .cm-item .cm-ct .cm-title h1 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+#page-details .comment .cm-item .cm-ct .cm-title h1 small,
+#page-details .comment .cm-item .cm-ct .cm-title h1 .small {
+  font-size: 65%;
+}
+#page-details .comment .cm-item .cm-ct .cm-title span {
+  font-family: "Roboto Italic";
+  font-size: 14px;
+  color: #a1a1a1;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+#page-details .comment .cm-item .cm-ct p {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+  color: #666666;
+  margin-bottom: -10px;
+  padding-right: 30px;
+  overview: hidden;
+}
+#page-details .comment .cm-item .cm-ct a {
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  color: #a1a1a1;
+  text-transform: uppercase;
+}
+#page-details .comment .cm-item.rp {
+  margin-left: 30px;
+  background-color: #f9f9f9;
+}
+#page-details .comment form.cm-form input {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+  padding-left: 30px;
+  color: #8a8a8a;
+  border: 1px solid #ebebeb;
+}
+#page-details .comment form.cm-form input.name {
+  width: 47%;
+  margin-right: 32px;
+}
+#page-details .comment form.cm-form input.email {
+  width: 47%;
+}
+#page-details .comment form.cm-form input.message {
+  width: 100%;
+  margin-top: 30px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+#page-details .comment form.cm-form button.submit {
+  background: #4b74e6;
+  background: -webkit-linear-gradient(left, #4b74e6, #8956e9);
+  background: -moz-linear-gradient(left, #4b74e6, #8956e9);
+  background: linear-gradient(to right, #4b74e6, #8956e9);
+  font-size: 14px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  border-radius: 30px;
+  padding: 10px 40px 7px 40px;
 }
 header#hd-page {
   background: url('../assets/images/blog-bg.png') center center / cover;

@@ -9,6 +9,11 @@
 	font-family: "Roboto Regular";
 	
 }
+.h1(){
+	font-size: 16px;
+	font-family: "Roboto Bold";
+	text-transform: uppercase;
+}
 #overview, #work, #feature, #screenshot, #people, #team, #pricing, #latest-post, #touch, #footer{
 	.title{
 		text-align: center;
@@ -752,6 +757,14 @@
 	#footer .subcribe button{
 		top: 65%;
 	}
+	//responsive for the blog-detail
+	#page-details{
+		.page-detail-ct{
+			margin-left: 50px !important;
+			margin-right: 50px !important;
+		}
+	}
+
 }
 // responsive for iphone
 @media screen and(max-width: 768px) and (min-width: 568px){
@@ -836,6 +849,13 @@
 	#pricing .price-it{
 		margin-bottom:50px;
 	}
+	//responsive for the blog-detail
+	#page-details{
+		.page-detail-ct{
+			margin-left: 30px !important;
+			margin-right: 30px !important;
+		}
+	}
 }
 @media(max-width: 567px){
 	.navbar-toggle{
@@ -884,6 +904,13 @@
 	#question .question-it .accordion-item button.accordion h3{
 		margin-left: 0 !important;
 	}
+	//responsive for the blog-detail
+	#page-details{
+		.page-detail-ct{
+			margin-left: 10px !important;
+			margin-right: 10px !important;
+		}
+	}
 }
 @media(max-width: 370px){
 	#footer .subcribe input, #footer .subcribe button{
@@ -908,6 +935,31 @@
 	}
 	#work .wk-image img{
 		margin-left: 0 !important;
+	}
+	//responsive for the blog-detail
+	#page-details{
+		.page-detail-ct{
+			margin-left: 5px !important;
+			margin-right: 5px !important;
+		}
+		.blog-post .quote h2{
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+			padding-left: 5px !important;
+			padding-right: 5px !important;
+		}
+		.comment .cm-item{
+			display: flex;
+			flex-direction: column;
+		}
+		.comment .cm-item img{
+			width: 100px;
+			height: 100px;
+		}
+		.comment form.cm-form input.name, input.email{
+				width: 90% !important;
+				margin-bottom: 30px;
+		}
 	}
 }
 //css for the toggle button
@@ -1003,13 +1055,17 @@
  }
  //css for the blog detail
  #page-details{
+ 	.page-detail-ct{
+ 		margin-left: 200px;
+ 		margin-right: 200px;
+ 	}
  	.blog-post{
  		img{
  			margin-bottom: 50px;
- 			margin-left: 200px;
+ 			width: 100%;
+ 			height: auto;
  		}
  		.post-title{
- 			margin-left: 200px;
  			h1{
  				font-size: 24px;
  				font-family: "Roboto Bold";
@@ -1030,14 +1086,10 @@
  			}
  		}
  		p{
- 			margin-left: 200px;
- 			margin-right: 200px;
  			.p();
  			color: #666666;
  		}
 		.quote{
-			margin-left: 200px;
-			margin-right: 200px;
 			h2{
 				font-family: "Roboto Italic";
 				font-size: 16px;
@@ -1057,10 +1109,8 @@
 		}	
 		.ct-social{
 			margin-top: 80px;
-			margin-left: 200px;
-			margin-right: 200px;
-			border-top: 1px solid #8c8c8c;
-			border-bottom: 1px solid #8c8c8c;
+			border-top: 1px solid #ebebeb;
+			border-bottom: 1px solid #ebebeb;
 			padding: 20px 0 20px 0;
 			span{
 				font-size: 18px;
@@ -1083,14 +1133,93 @@
 		}	
  	}
  	.comment{
- 		margin-left: 200px;
  		margin-top: 45px;
  		margin-bottom: 45px;
  		h1{
- 			font-size: 16px;
- 			font-family: "Roboto Bold";
- 			text-transform: uppercase;
+ 			.h1();
  			text-align: left;
+ 			margin-bottom: 50px;
+ 		}
+ 		.cm-item{
+ 			border: 1px solid #ebebeb;
+ 			display: flex;
+ 			margin-bottom: 30px;
+			img{
+				height: 105px;
+				margin-left: 30px;
+				margin-top:  20px;
+				margin-bottom: 20px;
+			}
+			.cm-ct{
+				margin-left: 20px;
+				.cm-title{
+					display: flex;
+					h1{
+						.h1();
+						color: #606060;
+					}
+					span{
+						font-family: "Roboto Italic";
+						font-size: 14px;
+						color: #a1a1a1;
+						margin-top: 13px;
+						margin-left: 20px;
+					}
+				}
+				p{
+					font-size: 14px;
+					font-family: "Roboto Regular";
+					color: #666666;
+					margin-bottom: -10px;
+					padding-right: 30px;
+					overview: hidden;
+				}
+				a{
+					font-family: "Roboto Bold";
+					font-size: 14px;
+					color: #a1a1a1;
+					text-transform: uppercase;
+				}
+			}
+ 		}
+ 		.cm-item.rp{
+ 			margin-left: 30px;
+ 			background-color: #f9f9f9;
+ 		}
+ 		form.cm-form{
+ 			input{
+				font-size: 14px;
+				font-family: "Roboto Regular";
+				padding-left:30px;
+				color: #8a8a8a;
+				border: 1px solid #ebebeb;
+ 			}
+ 			input.name{
+ 				width: 47%;
+ 				margin-right: 32px; 				
+ 			}
+ 			input.email{
+ 				width: 47%;				
+ 			}
+ 			input.message{
+ 				width: 100%;
+ 				margin-top: 30px;
+ 				height: 200px;
+ 				margin-bottom: 30px;				
+ 			}
+ 			button.submit{
+				background: #4b74e6;
+				background: linear-gradient(to right, #4b74e6, #8956e9);
+				color: #fff;
+				font-size: 14px;
+				font-family: "Roboto Bold";
+				text-transform: uppercase;
+				color: #fff;
+				border: none;
+				margin-top: 30px;
+				border-radius: 30px;
+				padding:10px 40px 7px 40px;
+ 			}
  		}
  	}
  }
