@@ -70,19 +70,22 @@
 		}
 	}
 	.wk-content{
+			background: url('../assets/images/line-bg.png') center center/cover;
 		.wk-it{
+			
 			color: #fff;
-			margin-top: 100px;
+			img{
+				margin-left: 45%;
+			}
 			h1{
 				font-size: 14px;
 				font-family: "Roboto Bold";
 				border: 1px solid;
-				padding-top: 16px;
-				padding-bottom: 16px;
+				padding: 17px 0 17px 0;
 				width: 15%;
 				margin-left: 43%;
 				border-radius: 50%; 
-				background-color: #5470e7;	
+				// background-color: #5470e7;	
 			}
 			img{
 
@@ -296,7 +299,15 @@
 					color: #b2b2b2;
 					padding: 15px;
 					border-radius: 50%;
+					.fa .fa-facebook{
+						padding: 15px 18px 15px 18px
+					}
+				}
+				i.fa .fa-facebook{
 					
+				}
+				i.fa .fa-facebook:hover{
+					padding: 15px 18px 15px 18px
 				}
 				i:hover{
 					background: #4b74e6;
@@ -677,6 +688,7 @@
 }
 
 @media screen and (max-width: 1200px) and(min-width: 769px){
+
 	.navbar-header{
 		float: none;
 	}
@@ -709,6 +721,11 @@
 		flex-direction: column;
 		float: left !important;
 		margin-left: 0;
+		height: auto !important;
+		li{
+			height: 50px !important;
+		}
+
 	}
 	header .logo{
 		margin-top: 0 !important;
@@ -773,6 +790,10 @@
 		flex-direction: column;
 		float: left !important;
 		margin-left: 0;
+		height: auto !important;
+		li{
+			height: 50px !important;
+		}
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border-color: none !important;
@@ -867,6 +888,10 @@
 		flex-direction: column;
 		float: left !important;
 		margin-left: 0;
+		height: auto !important;
+		li{
+			height: 50px !important;
+		}
 	}
 	.navbar-collapse{
 		border-top: none !important;

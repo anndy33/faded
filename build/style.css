@@ -6665,20 +6665,23 @@ h1,
   margin-right: 60px;
   height: auto;
 }
+#work .wk-content {
+  background: url('../assets/images/line-bg.png') center center / cover;
+}
 #work .wk-content .wk-it {
   color: #fff;
-  margin-top: 100px;
+}
+#work .wk-content .wk-it img {
+  margin-left: 45%;
 }
 #work .wk-content .wk-it h1 {
   font-size: 14px;
   font-family: "Roboto Bold";
   border: 1px solid;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 17px 0 17px 0;
   width: 15%;
   margin-left: 43%;
   border-radius: 50%;
-  background-color: #5470e7;
 }
 #work .wk-content .wk-it h2 {
   font-family: inherit;
@@ -6926,6 +6929,12 @@ h1,
   color: #b2b2b2;
   padding: 15px;
   border-radius: 50%;
+}
+#team .team-it .mem-infor .socail i .fa .fa-facebook {
+  padding: 15px 18px 15px 18px;
+}
+#team .team-it .mem-infor .socail i.fa .fa-facebook:hover {
+  padding: 15px 18px 15px 18px;
 }
 #team .team-it .mem-infor .socail i:hover {
   background: #4b74e6;
@@ -7346,6 +7355,10 @@ h1,
     flex-direction: column;
     float: left !important;
     margin-left: 0;
+    height: auto !important;
+  }
+  ul.menu li {
+    height: 50px !important;
   }
   header .logo {
     margin-top: 0 !important;
@@ -7418,6 +7431,10 @@ h1,
     flex-direction: column;
     float: left !important;
     margin-left: 0;
+    height: auto !important;
+  }
+  ul.menu li {
+    height: 50px !important;
   }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
@@ -7514,6 +7531,10 @@ h1,
     flex-direction: column;
     float: left !important;
     margin-left: 0;
+    height: auto !important;
+  }
+  ul.menu li {
+    height: 50px !important;
   }
   .navbar-collapse {
     border-top: none !important;
@@ -8076,6 +8097,7 @@ ul.menu {
   margin-top: 50px;
   float: right;
   margin-right: 0;
+  height: 45px;
 }
 ul.menu li {
   list-style-type: none;
