@@ -558,12 +558,13 @@
 #touch{
 	background: url('../assets/images/touch-bg.png');
 	background-size: cover;
-	.touch-ct{
+	.touch-row{
+		height: 587px;
 		.contact{
-			width: 50%;
+			width: 100%;
 			background-color: #fff;
 			padding-left: 40px;
-			padding-bottom: 50px;
+			padding-bottom: 82px;
 			padding-right: 70px;
 			h1{
 				font-size: 18px;
@@ -592,14 +593,11 @@
 			}
 		}
 		.map{
-			width: 50%;
-			
-			float: right;
-			margin-top: -587px;
 			iframe{
 				height: 587px;
 			}
-
+			margin-top: 20px;
+			margin-left: -30px;
 		}
 		.ct-form{
 			background-color: #3059be;
@@ -667,8 +665,9 @@
 			border-radius: 30px;
 			position: relative;
 		}
-		button{
+		a{
 			font-size: 14px;
+			background-color: #fff;
 			font-family: "Roboto Bold";
 			text-transform: uppercase;
 			color: #3059be;
@@ -677,7 +676,7 @@
 			border-radius: 30px;
 			padding: 10px 25px 10px 25px;
 			position: absolute;
-			top: 53%;
+			margin-top: 0;
 			right: 25%;
 			i{
 				margin-left: 15px;
@@ -758,9 +757,6 @@
 	#work .wk-content .wk-it{
 		margin-top: 0 !important;
 	}
-	#footer .subcribe button{
-		top: 56% !important;
-	}
 	#overview .content{
 		display: flex;
 
@@ -786,17 +782,11 @@
 		margin-left: 100px;
 		margin-top: 50px;
 	}
-	#footer .subcribe button{
-		top: 65%;
+	#touch.touch-row.ct-form{
+		padding-bottom: 0px !important;
 	}
-	#touch .touch-ct .map{
-		margin-top: -589px !important;
-	}
-	#touch .touch-ct .contact{
-		padding-bottom: 60px !important;
-	}
-	#touch .touch-ct .contact p{
-		margin-bottom: 0 !important;
+	#touch .touch-row .contact{
+		padding-bottom: 18px !important;
 	}
 	//responsive for the blog-detail
 	#page-details{
@@ -805,7 +795,16 @@
 			margin-right: 50px !important;
 		}
 	}
-
+}
+@media screen(min-width: 990px){
+	#touch .touch-row .map{
+		margin-left: 0px !important;
+	}
+}
+@media screen(min-width: 991px) and (max-width: 1200px){
+	#touch .touch-row .map{
+		margin-left: -30px !important;
+	}
 }
 // responsive for iphone
 @media screen and(max-width: 768px) and (min-width: 568px){
@@ -902,6 +901,9 @@
 	#pricing .price-it{
 		margin-bottom:50px;
 	}
+	#touch .touch-row .map{
+		margin-left: 0 !important;
+	}
 	//responsive for the blog-detail
 	#page-details{
 		.page-detail-ct{
@@ -969,6 +971,9 @@
 	#question .question-it .accordion-item button.accordion h3{
 		margin-left: 0 !important;
 	}
+	#touch .touch-row .map{
+		margin-left: 0 !important;
+	}
 	//responsive for the blog-detail
 	#page-details{
 		.page-detail-ct{
@@ -1003,16 +1008,16 @@
 	ul.menu button{
 		margin-top: 20px !important;
 	}
-	#footer .subcribe input, #footer .subcribe button{
-		display:none;
+	#touch .touch-row .map{
+		margin-left: 0 !important;
 	}
-	#touch .touch-ct .map{
-		display: none;
-	}
-	#touch .touch-ct .contact{
-		width: 100%;
-		padding-left: 20px !important;
-	}
+	// #touch .touch-ct .map{
+	// 	display: none;
+	// }
+	// #touch .touch-ct .contact{
+	// 	width: 100%;
+	// 	padding-left: 20px !important;
+	// }
 	#latest-post .post-it{
 		margin-bottom: 30px !important;
 	}
@@ -1031,6 +1036,9 @@
 	}
 	#work .wk-content .wk-it{
 		margin-top: 0 !important;
+	}
+	#footer .subcribe button{
+		top: 52% !important;
 	}
 	//responsive for the blog-detail
 	#page-details{
@@ -1058,7 +1066,7 @@
 		}
 	}
 }
-//css for the toggle button
+//css for the toggle button, using humberger icon
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #7c55e9;
 }

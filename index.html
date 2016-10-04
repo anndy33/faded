@@ -748,14 +748,12 @@
 		</div>
 		<div class="row">
 			<div class="touch-row">
-				<div class="touch-ct">
-				<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="contact">
 						<h1>contact us</h1>
 						<img src="assets/images/ct-line.png">
 						<p>Donec interdum dapibus facilisis aliquam congue tempus augue non bibendum
 							ipsum dictum
-							quis vestibulum consequat.
 						</p>
 						<div class="ct-infor">
 							<span><i class="fa fa-map-marker" aria-hidden="true"></i>Location</span>
@@ -772,9 +770,11 @@
 							<a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
 						</div>
 					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14896.6360948438!2d105.834901!3d21.02632215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1468894804589" width="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>					
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14896.6360948438!2d105.834901!3d21.02632215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1468894804589" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>	
 				</div>
 				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="ct-form">
@@ -788,7 +788,6 @@
 						</form>
 					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 	</div>
@@ -809,7 +808,7 @@
 				</div>
 				<div class="subcribe">
 					<input type="text" name="subcribe" placeholder="Enter your email">
-					<button  class="button hvr-grow">Subcribe<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+					<a  class="button hvr-grow">Subcribe<i class="fa fa-paper-plane" aria-hidden="true"></i></a>
 					<p>Copyright © by<span> Faded</span> 2016. All right reserved </p>
 				</div>
 				
@@ -862,7 +861,7 @@
 		$('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
 		});
-
+		//js for toogle menu when click button
 		$('button.navbar-toggle').click(function(event) {
 			$('nav.navbar-default').toggleClass('toggle-color');
 		});
