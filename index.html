@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Faded</title>
-    <link rel="stylesheet" href="build/style.css">
-     <link rel="stylesheet" href="build/hover.css">
-    <link rel="stylesheet" href="build/scrolling-nav.css">
-     <link rel="stylesheet" href="build/lightbox.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="build/style.css">
+	<link rel="stylesheet" href="build/hover.css">
+	<link rel="stylesheet" href="build/scrolling-nav.css">
+	<link rel="stylesheet" href="build/lightbox.min.css">
+	<link rel="stylesheet" href="build/ekko-lightbox.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- header here -->
 <header id="header">
 	<div class="container">
 		<div class="row">
-			<nav id="mainNav" class="navbar navbar-default navbar-custom" role="navigation">
+			<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="col-md-2 col-sm-2">
 						<div class="logo">
-							<img  class="button hvr-grow" src="assets/images/logo.png" alt="">
+							<a class="navbar-brand page-scroll" href="#page-top"><img  class="button hvr-grow" src="assets/images/logo.png" alt=""></a>
+							
 						</div>
 				</div>
 				<div class="navbar-header page-scroll">
@@ -32,7 +33,7 @@
 							<span></span>
 						</div>
 					</button>
-					<!-- <a class="navbar-brand page-scroll" href="#page-top">Spirit8</a> -->
+					
 				</div>
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,7 +62,7 @@
 								<a class="page-scroll" href="#pricing">Pricing</a>
 							</li>
 							<li>
-								<a class="page-scroll" href="#">Blog</a>
+								<a class="page-scroll" href="bloglist.html">Blog</a>
 							</li>
 							<li>
 								<a class="page-scroll" href="#touch">Contact</a>
@@ -372,7 +373,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<img  class="button hvr-grow" src="assets/images/play-icon.png">
+			<p><a href="https://player.vimeo.com/video/80629469" data-toggle="lightbox"  data-type="vimeo"><img class="button hvr-grow" src="assets/images/play-icon.png"></a></p>
 				</a><br>
 				<h1>video app demo</h1>
 				<p>
@@ -766,14 +767,14 @@
 							<p>reilly.jasmin@flatley.biz</p>	
 						</div>
 						<div class="ct-social">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-							<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-							<i class="fa fa-wifi" aria-hidden="true"></i>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14896.6360948438!2d105.834901!3d21.02632215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1468894804589" width="100%" height="587px" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14896.6360948438!2d105.834901!3d21.02632215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1468894804589" width="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>					
 				</div>
 				<div class="col-md-4 col-sm-12 col-xs-12">
@@ -822,6 +823,7 @@
 <script src="assets/js/libs/jquery.js"></script>
 <script src="assets/js/libs/bootstrap.min.js"></script>
 <script src="assets/js/libs/lightbox.min.js"></script>
+<script src="assets/js/libs/ekko-lightbox.js"></script>
 <!-- Scrolling Nav JavaScript -->
 <script src="assets/js/libs/jquery.easing.min.js"></script>
 <script src="assets/js/libs/scrolling-nav.js"></script>
@@ -863,6 +865,25 @@
 		$(this).toggleClass('open');
 		});
 	});
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+}); 
+//js to change background color for navbar fixed top
+jQuery(document).ready(function($) {
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop(),
+        navbar = $('.navbar-default');
+
+    if (scrollPos > 200) {
+      navbar.addClass('alt-color');
+    } else {
+      navbar.removeClass('alt-color');
+    }
+  });
+});
+
+
 </script>
 
 </body>
