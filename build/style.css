@@ -7265,6 +7265,7 @@ h1,
 #touch .touch-ct .ct-form form input.message {
   height: 208px;
   padding-top: 0;
+  padding-bottom: 165px;
 }
 #touch .touch-ct .ct-form form button {
   font-size: 14px;
