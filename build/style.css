@@ -7435,9 +7435,9 @@ h1,
     margin-right: 50px !important;
   }
 }
-@media screen (min-width: 990px) {
+@media (max-width: 990px) {
   #touch .touch-row .map {
-    margin-left: 0px !important;
+    margin-left: 0px;
   }
 }
 @media screen (min-width: 991px) and (max-width: 1200px) {
