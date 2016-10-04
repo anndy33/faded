@@ -33,7 +33,6 @@
 							<span></span>
 						</div>
 					</button>
-					
 				</div>
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +52,7 @@
 								<a class="page-scroll" href="#screenshot">Screenshots</a>
 							</li>
 							<li>
-								<a class="page-scroll" href="#">Testimonial</a>
+								<a class="page-scroll" href="#feature">Testimonial</a>
 							</li>
 							<li>
 								<a class="page-scroll" href="#team">Team</a>
@@ -820,7 +819,7 @@
 </footer>
 <!-- end of footer -->
 <!-- jQuery -->
-<script src="assets/js/libs/jquery.js"></script>
+<script src="assets/js/libs/jquery-1.9.1.min.js"></script>
 <script src="assets/js/libs/bootstrap.min.js"></script>
 <script src="assets/js/libs/lightbox.min.js"></script>
 <script src="assets/js/libs/ekko-lightbox.js"></script>
@@ -838,7 +837,6 @@
 	   $('.src-menu li').click(function(){
 	     $('.src-menu li').removeClass('active');
 	     $(this).addClass('active');
-
 	     var selector =$(this).attr('data-filter');
 	     $(".grid").isotope({
 	       filter: selector,
@@ -864,26 +862,28 @@
 		$('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
 		});
+
+		$('button.navbar-toggle').click(function(event) {
+			$('nav.navbar-default').addClass('toggle-color');
+		});
 	});
-$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-}); 
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+	    event.preventDefault();
+	    $(this).ekkoLightbox();
+	}); 
 //js to change background color for navbar fixed top
 jQuery(document).ready(function($) {
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop(),
         navbar = $('.navbar-default');
-
     if (scrollPos > 200) {
       navbar.addClass('alt-color');
-    } else {
+    } 
+    else {
       navbar.removeClass('alt-color');
     }
   });
 });
-
-
 </script>
 
 </body>

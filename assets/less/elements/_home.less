@@ -697,6 +697,9 @@
 }
 
 @media screen and (max-width: 1200px) and(min-width: 769px){
+	.navbar-fixed-top .navbar-collapse{
+		max-height: none !important;
+	}
 	.navbar-header{
 		float: none;
 	}
@@ -756,7 +759,7 @@
 		margin-top: 0 !important;
 	}
 	#footer .subcribe button{
-		top: 56%;
+		top: 56% !important;
 	}
 	#overview .content{
 		display: flex;
@@ -786,6 +789,15 @@
 	#footer .subcribe button{
 		top: 65%;
 	}
+	#touch .touch-ct .map{
+		margin-top: -589px !important;
+	}
+	#touch .touch-ct .contact{
+		padding-bottom: 60px !important;
+	}
+	#touch .touch-ct .contact p{
+		margin-bottom: 0 !important;
+	}
 	//responsive for the blog-detail
 	#page-details{
 		.page-detail-ct{
@@ -797,6 +809,9 @@
 }
 // responsive for iphone
 @media screen and(max-width: 768px) and (min-width: 568px){
+	.navbar-fixed-top .navbar-collapse{
+		max-height: none !important;
+	}
 	ul.menu{
 		display: flex;
 		flex-direction: column;
@@ -822,7 +837,7 @@
 	}
 	.navbar-toggle{
 		color: #fff;
-		margin-top: -50px;
+		margin-top: 0px !important;
 	}
 	header #slide{
 		margin-top: 0 !important;
@@ -896,9 +911,12 @@
 	}
 }
 @media(max-width: 567px){
+	.navbar-fixed-top .navbar-collapse{
+		max-height: none !important;
+	}
 	.navbar-toggle{
 		color: #fff;
-		margin-top: -50px;
+		margin-top: 0px !important;
 	}
 	ul.menu{
 		display: none;
@@ -960,6 +978,28 @@
 	}
 }
 @media(max-width: 370px){
+	.navbar-fixed-top .navbar-collapse{
+		max-height: none !important;
+	}
+	.navbar-default.alt-color {
+	background-color: black !important;
+	opacity: 0.6;
+	ul.menu{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+	ul.menu li.active a{
+	background-color: black !important;
+	border-bottom: 2px solid #fff;
+	}
+	.logo{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+	}
+	.navbar-toggle{
+		margin-top: 0 !important;
+	}
 	ul.menu button{
 		margin-top: 20px !important;
 	}
@@ -1278,4 +1318,14 @@
  			}
  		}
  	}
+ }
+ //style for the navbar toogle when click function
+.toggle-color{
+ 	background-color: black !important;
+ 	opacity: 0.6;
+	ul.menu li.active a{
+		border-bottom: 2px solid #fff;
+		background-color: black !important;
+		opacity: 0.6;
+	}
  }
